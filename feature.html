@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eis a questão...</title>
+    <style>
+        body {
+            color: aliceblue;
+            font-family: 'Encode Sans Condensed', sans-serif;
+            background: rgb(2,0,36);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #nao {
+            position: absolute;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>O João é burro?</h1>
+    <button id="sim">Sim</button>
+    <button id="nao">Não</button>
+
+    <script>
+        const botaoNao = document.getElementById('nao'); // Corrigido para pegar o botão 'nao'
+
+        botaoNao.addEventListener('mouseover', () => {
+            const larguraJanela = window.innerWidth - botaoNao.offsetWidth;
+            const alturaJanela = window.innerHeight - botaoNao.offsetHeight;
+
+            const novaPosicaoX = Math.floor(Math.random() * larguraJanela);
+            const novaPosicaoY = Math.floor(Math.random() * alturaJanela);
+
+            botaoNao.style.left = novaPosicaoX + 'px';
+            botaoNao.style.top = novaPosicaoY + 'px';
+        });
+    </script>
+</body>
+</html>

@@ -61,7 +61,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(156,156,156,1) 23%, 
         const messages = document.getElementById('messages');
         const send = document.getElementById('send');
 
-        const socket = new WebSocket('wss://joaoeburro.vercel.app/api/chat.js');
+        const socket = new WebSocket('wss://joaoeburro.vercel.app/api/chat');
 
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);

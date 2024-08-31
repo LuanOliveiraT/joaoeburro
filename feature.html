@@ -17,12 +17,24 @@
         #nao {
             position: absolute;
         }
-    
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button-link:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <h1>O João é burro?</h1>
-    <button id="sim">Sim</button>
+    <a href="https://cdn-0001.qstv.on.epicgames.com/spbduGeODldQXSaWaZ/image/landscape_comp.jpeg" class="button-link">Sim</a>
     <button id="nao">Não</button>
 
     <script>
@@ -38,6 +50,7 @@
             botaoNao.style.left = novaPosicaoX + 'px';
             botaoNao.style.top = novaPosicaoY + 'px';
         });
+
     </script>
 </body>
 </html>
